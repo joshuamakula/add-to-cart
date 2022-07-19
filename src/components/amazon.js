@@ -3,15 +3,7 @@ import list from '../data';
 import Card from './Card';
 import '../styles/amazon.css';
 
-const Amazon = () => {
-
-    const [cart, setCart] = useState([]);
-
-    const handleClick = (item) => {
-        cart.push(item)
-        // setCart(...[cart,item]);
-        console.log(cart);
-    }
+const Amazon = ({handleClick}) => {
 
     return (
         <section>
